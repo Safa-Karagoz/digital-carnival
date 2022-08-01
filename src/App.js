@@ -1,20 +1,47 @@
 import React from "react"
-import Header from "./components/Header"
 import "./App.css"
-import GameButton from "./components/GameButton";
-import CarouselPage from "./components/Carousel";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+// COMPONENTS
+import CarouselPage from "./components/dashboard/Carousel";
+import Header from "./components/dashboard/Header"
+import RouterBack from "./components/RouterBack"
+import AccountPage from './components/account/AccountPage'
+import LoginPage from "./components/login/LoginPage";
+// import Loading from "./components/Loading";
+
+
 
 function App() {
   return (
-    <div className="container">
-        <Header />
-        {/* <GameButton text={"Strong Man"}/>
-        <GameButton text={"Skeeball"}/>
-        <GameButton text={"Just Dance"}/> */}
+    <Router>
+      <Routes>
+        <Route path='/' element= {
+          <>
+            <LoginPage />
+          </>
+        } />
 
-        <CarouselPage />
+        <Route path='/dashboard' element= {
+          <>
+            <Header />
+            <CarouselPage />
+          </>
+        } />
 
-    </div>
+        <Route path="/account" element= {
+          <>
+            <AccountPage /> 
+          </>
+        } />
+
+        <Route path="/leaderboard" element= {
+          <>
+            <RouterBack />
+          </>
+        } />
+      </Routes>
+    </Router>
+    
   )
 }
 

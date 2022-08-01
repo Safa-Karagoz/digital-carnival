@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+.wrapper {
+    display: inline-grid;
+    grid-template-columns: 15% auto 15%;
+    /* row-gap: 10px; */
+    align-content: center;
+    width: 100%;
+}
+
+.header1 {
+    font-size: 8vw;
+    font-family: 'Roboto Slab', serif, bolder;
+    line-height: 7vw;    
+    text-align: center;
+}
+
+.header2 {
+    font-size: 4vw;
+    font-weight: lighter;
+    font-family: 'Roboto Slab', serif;
+    line-height: 0;
+    text-align: center;
+}
+
+.nav-btn-lead{
+    width: 13vw;
+    height: 13vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-btn-acc{
+    width: 13vw;
+    height: 13vw;
+    margin-top: 5vw;
+}
+
+.account_btn { 
+    /* positon + size */
+    width: 50%;
+    min-height: 100%;
+    margin: auto /* centers in grid */
+}
+.account-image {
+    width: 15%;
+    margin: auto;
+}
+
+.game_btn {
+    background-color: aliceblue;
+    border: 1px black solid;
+    box-shadow: 5px 10px;
+    width: 100%;
+
+    /* text */
+    color: black;
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+    text-align: left;
+}.game_btn:hover { 
+    background-color: antiquewhite;
+}
+
+.gameIcon {
+    max-width: 30%;
+    margin-left: auto;
+    display: block;
+    float: right;
+}

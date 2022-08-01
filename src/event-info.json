@@ -1,0 +1,20 @@
+[
+    { 
+        "event_id": 0,
+        "event_name": "Strong Man", 
+        "event_description": "This is the description", 
+        "event_location": 1
+    },
+    {
+        "event_id": 1,
+        "event_name": "Skee-Ball", 
+        "event_description": "This is the description #2", 
+        "event_location": 2
+    },
+    {
+        "event_id": 2,
+        "event_name": "Just Dance", 
+        "event_description": "This is the description #3", 
+        "event_location": 3
+    }
+]

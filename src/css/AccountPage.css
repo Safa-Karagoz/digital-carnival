@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+}
+
+.profile-header {
+    display: inline-block;
+
+}   
+
+
+.logout-btn {
+    display: block;
+}

@@ -1,3 +1,11 @@
-.container {
-    /* border: 1px red solid; */
+
+
+.back-btn {
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    color: blue;
+    display: inline-block;
+    height: 100%;
 }
